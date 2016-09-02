@@ -91,6 +91,7 @@ public class Test {
 ![](http://imglf1.nosdn.127.net/img/SU9HaFdjTlNlVmJ1eXNnaVlDM0cvc0s1VzNYMXhZd2dSSnlLK1lHTEhXSDNWOGQ3ekFSTVBBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
 
 我们可以设想一下真实的场景，如果把上面的Test当做一个servlet的话，当客户端发起登录请求——>请求交给服务端的Servlet——>Servlet根据客户端传递的loginType调用工厂类LoginManager的factory()方法——>factory()方法根据参数loginType创建相应的登录验证类(DomainLogin或PasswordLogin)并返回——>登录验证类调用方法verify()验证用户名密码是否正确
+
 ![](http://imglf.nosdn.127.net/img/SU9HaFdjTlNlVmJ1eXNnaVlDM0cvcXA0WS83cW9tTHFjQ1BXNmJjYy9YdDY3cVIzQUZLUmdBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
 
 假如不使用简单工厂模式则验证登录Servlet代码如下（假设Test为一个Servlet，变量loginType、name、password表示从客户端传递过来的参数）：
