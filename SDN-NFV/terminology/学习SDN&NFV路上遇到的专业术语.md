@@ -75,3 +75,30 @@
 **`AWS:`** `Amazon Web Service`，亚马逊公司旗下的云计算服务平台，为全世界各个国家和地区的客户提供一整套基础设施和云解决方案。AWS面向用户提供包括弹性计算、存储、数据库、应用程序在内的一整套云计算服务，能够帮助企业降低IT投入成本和维护成本。
 
 **`RESTful：`** `Representational State Transfer`(表述状态转化)，描述了一个架构样式的网络系统，比如web应用程序。它首次出现在2000年Roy Fielding的博士论文中，他是HTTP规范的主要编写者之一。在目前主流的三种Web服务交互方案中，REST相比SOAP（Simpe Object Acess protocol，简单对象访问协议）以及XML-RPC更加简单明了，无论是URL的处理还是对Payload的编码，REST都倾向于更加简单轻量的方法设计和实现。值得注意的是REST并没有一个明确的标准，而更像是一种设计风格。
+
+**`COTS:`** `commercial off-the-shelf` 商业化现有的
+
+**`SFC:`** `service function chain` 服务功能链
+
+**`VIM:`** `virtualized infrastructure manager
+` 虚拟化基础架构管理器
+
+**`:`**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
