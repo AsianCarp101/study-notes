@@ -7,7 +7,7 @@
 
 　　就拿登录功能来说，假如应用系统需要支持多种登录方式如：口令认证、域认证（口令认证通常是去数据库中验证用户，而域认证则是需要到微软的域中验证用户）。那么自然的做法就是建立一个各种登录方式都适用的接口，如下图所示：
 
-![](http://imglf1.nosdn.127.net/img/SU9HaFdjTlNlVmJ1eXNnaVlDM0cvampnVVFWTVM1bEVUdDhHbVg3eVp1TUdpTkFCLy9pUnlRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](https://github.com/liyayu/study-notes/blob/master/note-markdown-image/design-pattern/sample-factory/1.png?raw=true)
 
 ```java
 public interface Login {
@@ -90,11 +90,11 @@ public class Test {
 ```
 简单工厂模式的结构如下图：
 
-![](http://imglf1.nosdn.127.net/img/SU9HaFdjTlNlVmJ1eXNnaVlDM0cvc0s1VzNYMXhZd2dSSnlLK1lHTEhXSDNWOGQ3ekFSTVBBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](https://github.com/liyayu/study-notes/blob/master/note-markdown-image/design-pattern/sample-factory/2.png?raw=true)
 
 我们可以设想一下真实的场景，如果把上面的Test当做一个servlet的话，当客户端发起登录请求——>请求交给服务端的Servlet——>Servlet根据客户端传递的loginType调用工厂类LoginManager的factory()方法——>factory()方法根据参数loginType创建相应的登录验证类(DomainLogin或PasswordLogin)并返回——>登录验证类调用方法verify()验证用户名密码是否正确
 
-![](http://imglf.nosdn.127.net/img/SU9HaFdjTlNlVmJ1eXNnaVlDM0cvcXA0WS83cW9tTHFjQ1BXNmJjYy9YdDY3cVIzQUZLUmdBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](https://github.com/liyayu/study-notes/blob/master/note-markdown-image/design-pattern/sample-factory/3.png?raw=true)
 
 假如不使用简单工厂模式则验证登录Servlet代码如下（假设Test为一个Servlet，变量loginType、name、password表示从客户端传递过来的参数）：
 

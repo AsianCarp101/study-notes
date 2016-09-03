@@ -18,7 +18,7 @@
 
 　　这种进一步抽象化的结果，使这种工厂方法模式可以用来允许系统在不修改具体工厂角色的情况下引进新的产品，这一特点无疑使得工厂方法模式具有超过简单工厂模式的优越性。下面就针对以上需求设计UML图：
 
-![](http://imglf.nosdn.127.net/img/SU9HaFdjTlNlVmJBRmJoQnB0M3lDcThobDkyR0dQdGdZRTlZSnZlU29rOG5wTENUcU1BdWxRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](https://github.com/liyayu/study-notes/blob/master/note-markdown-image/design-pattern/factory-method/1.png?raw=true)
 
 从上图可以看出，这个使用的工厂方法模式的系统涉及到以下角色：
 
@@ -180,7 +180,7 @@ public class Test {
 
 **工厂方法模式的活动序列图**
 
-![](http://imglf1.nosdn.127.net/img/SU9HaFdjTlNlVmJBRmJoQnB0M3lDcThobDkyR0dQdGdyTTd1ZE1FMEdJWTM2RjFJQ0pIdGpnPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)
+![](https://github.com/liyayu/study-notes/blob/master/note-markdown-image/design-pattern/factory-method/2.png?raw=true)
 
 　　客户端创建ExportHtmlFactory对象，这时客户端所持有变量的静态类型为ExportFactory，而实际类型为ExportHtmlFactory。然后客户端调用ExportHtmlFactory对象的工厂方法factory()，接着后者调用ExportFinancialHtmlFile的构造子创建出导出对象。
 
