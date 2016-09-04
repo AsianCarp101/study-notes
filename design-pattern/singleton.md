@@ -44,7 +44,7 @@ private static EagerSingleton instance = new EagerSingleton();
 　　**饿汉式是典型的空间换时间**，当类装载的时候就会创建类的实例，不管你用不用，先创建出来，然后每次调用的时候，就不需要再判断，节省了运行时间。
 
 
-####** 懒汉式单例类**
+#### **懒汉式单例类**
 ```java
 public class LazySingleton {
     private static LazySingleton instance = null;
@@ -76,7 +76,7 @@ private static LazySingleton instance = null;
 _ _ _
 
 
-####** 双重检查加锁**
+#### **双重检查加锁**
 
 　　可以使用“双重检查加锁”的方式来实现，就可以既实现线程安全，又能够使性能不受很大的影响。那么什么是“双重检查加锁”机制呢？
 
@@ -111,7 +111,7 @@ public class Singleton {
 
 　　根据上面的分析，常见的两种单例实现方式都存在小小的缺陷，那么有没有一种方案，既能实现延迟加载，又能实现线程安全呢？
 
-####**Lazy initialization holder class模式**
+#### **Lazy initialization holder class模式**
 
 　　这个模式综合使用了Java的类级内部类和多线程缺省同步锁的知识，很巧妙地同时实现了延迟加载和线程安全。
 
@@ -172,7 +172,7 @@ public class Singleton {
 　　这个模式的优势在于，getInstance方法并没有被同步，并且只是执行一个域的访问，因此延迟初始化并没有增加任何访问成本。
 
 
-####**单例和枚举**
+#### **单例和枚举**
 
 　　按照《高效Java 第二版》中的说法：单元素的枚举类型已经成为实现Singleton的最佳方法。用枚举来实现单例非常简单，只需要编写一个包含单个元素的枚举类型即可。
 
