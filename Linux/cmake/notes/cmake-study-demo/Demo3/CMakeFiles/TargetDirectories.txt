@@ -1,0 +1,2 @@
+/home/liyayu/code/study-notes/Linux/cmake/notes/cmake-study-demo/Demo3/CMakeFiles/Demo.dir
+/home/liyayu/code/study-notes/Linux/cmake/notes/cmake-study-demo/Demo3/math/CMakeFiles/MathFunctions.dir

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyayu/code/study-notes/Linux/cmake/notes/cmake-study-demo/Demo3/main.cc
+stdio.h
+-
+stdlib.h
+-
+math/MathFunctions.h
+/home/liyayu/code/study-notes/Linux/cmake/notes/cmake-study-demo/Demo3/math/MathFunctions.h
+
+/home/liyayu/code/study-notes/Linux/cmake/notes/cmake-study-demo/Demo3/math/MathFunctions.h
+
